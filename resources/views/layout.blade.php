@@ -19,15 +19,30 @@
 
 <body class="antialiased">
     <header>
-        <h1 class="text-primary">これはヘッダー</h1>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/">MoneyMinder</a>
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <!-- 成功した時 -->
+    <div class="alert alert-success container" role="alert">
+        A simple success alert—check it out!
+    </div>
+
+    <!-- 失敗した時 -->
+    <div class="alert alert-danger container" role="alert">
+        A simple danger alert—check it out!
+    </div>
+
+    <main class="py-5">
         @yield('content')
     </main>
 
-    <footer>
-        <h1 class="text-danger">これはフッター</h1>
+    <footer style="background-color: #000000;" class="py-2 text-center">
+        <p class="text-white" style="margin-bottom: 0;">2024 スーハー株式会社</p>
     </footer>
 </body>
 
