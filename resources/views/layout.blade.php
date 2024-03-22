@@ -27,19 +27,22 @@
         </nav>
     </header>
 
-    <!-- 成功した時 -->
-    <div class="alert alert-success container" role="alert">
-        A simple success alert—check it out!
-    </div>
+    <div class="mx-auto" style="max-width: 1200px;">
+        <!-- 成功した時 -->
+        <div class="alert alert-success mx-auto" role="alert">
+            A simple success alert—check it out!
+        </div>
 
-    <!-- 失敗した時 -->
-    <div class="alert alert-danger container" role="alert">
-        A simple danger alert—check it out!
-    </div>
+        <!-- 失敗した時 -->
+        <div class="alert alert-danger" role="alert">
+            A simple danger alert—check it out!
+        </div>
 
-    <main class="py-5">
-        @yield('content')
-    </main>
+        <main class="py-5">
+            @yield('content')
+        </main>
+
+    </div>
 
     <footer style="background-color: #000000;" class="py-2 text-center">
         <p class="text-white" style="margin-bottom: 0;">2024 スーハー株式会社</p>
